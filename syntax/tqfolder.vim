@@ -6,6 +6,8 @@ if exists("b:current_syntax")
 	finish
 endif
 
+au BufRead,BufNewFile *.def set filetype=TQFolder
+
 syn match celComment "#.*$"
 syn match celCut ".cutExpression"
 syn match celWeight ".weightExpression"
