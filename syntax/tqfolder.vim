@@ -30,5 +30,3 @@ hi def link celExpr             String
 hi def link celCutStart         ModeMsg
 hi def link celAtStart          Tag
 hi def link celAngBracket       Comment
-
-let b:current_syntax = "def"
