@@ -6,8 +6,6 @@ if exists("b:current_syntax")
 	finish
 endif
 
-au BufRead,BufNewFile *.def set filetype=TQFolder
-
 syn match celComment "#.*$"
 syn match celCut ".cutExpression"
 syn match celWeight ".weightExpression"
@@ -30,3 +28,5 @@ hi def link celExpr             String
 hi def link celCutStart         ModeMsg
 hi def link celAtStart          Tag
 hi def link celAngBracket       Comment
+
+let b:current_syntax = "def"
