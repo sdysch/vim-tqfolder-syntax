@@ -39,6 +39,7 @@ syn match celTitle ".histMarkerSize"
 syn match celTitle ".histMarkerStyle"
 syn match celTitle ".stack"
 syn match celTitle ".showRaw"
+syn match celTitle ".isData"
 
 " start of new cutblock
 syn match celCutStart "+.*{"
@@ -48,9 +49,6 @@ syn match celAtStart "@\*\/.[^{]*"
 
 " opening of cut definitions
 syn match celAngBracket "[<>]"
-
-" tags <tagName=, doesn't work :(
-syn match celTag "[a-zA-Z0-9]+"
 
 syn match histStart "<<"
 
