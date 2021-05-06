@@ -9,9 +9,36 @@ endif
 syn match celComment "#.*$"
 syn match celCut ".cutExpression"
 syn match celWeight ".weightExpression"
-syn match celTitle ".title"
+
 syn match booleanTrue "[tT]rue"
 syn match booleanFalse "[fF]alse"
+
+syn match ROOTCOLOR "kRed"
+syn match ROOTCOLOR "kGreen"
+syn match ROOTCOLOR "kAzure"
+syn match ROOTCOLOR "kCyan"
+syn match ROOTCOLOR "kOrange"
+syn match ROOTCOLOR "kPink"
+syn match ROOTCOLOR "kBlue"
+syn match ROOTCOLOR "kYellow"
+syn match ROOTCOLOR "kMagenta"
+syn match ROOTCOLOR "kGray"
+
+syn match celTitle ".title"
+syn match celTitle ".path"
+syn match celTitle ".name"
+syn match celTitle ".isSignal"
+syn match celTitle ".isBackground"
+syn match celTitle ".isHistogram"
+syn match celTitle "histLineColor"
+syn match celTitle "histFillStyle"
+syn match celTitle "histFillColor"
+syn match celTitle "histLineWidth"
+syn match celTitle "histLineStyle"
+syn match celTitle ".histMarkerSize"
+syn match celTitle ".histMarkerStyle"
+syn match celTitle ".stack"
+syn match celTitle ".showRaw"
 
 " start of new cutblock
 syn match celCutStart "+.*{"
@@ -53,5 +80,6 @@ hi def link booleanFalse        Identifier
 hi def link histStart           ModeMsg
 hi def link alias               Operator
 hi def link mathsExpr           Function
+hi def link ROOTCOLOR           Function
 
 let b:current_syntax = "def"
