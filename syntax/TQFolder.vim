@@ -42,7 +42,7 @@ syn match celTitle ".showRaw"
 syn match celTitle ".isData"
 
 " start of new cutblock
-syn match celCutStart "^+.*{"
+syn match celCutStart "+.*{"
 
 " new cutblock started by @*/Cut...
 syn match celAtStart "@\*\/.[^{]*"
