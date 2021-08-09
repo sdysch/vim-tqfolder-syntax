@@ -23,6 +23,7 @@ syn match ROOTCOLOR "kBlue"
 syn match ROOTCOLOR "kYellow"
 syn match ROOTCOLOR "kMagenta"
 syn match ROOTCOLOR "kGray"
+syn match ROOTCOLOR "kBlack"
 
 syn match celTitle ".title"
 syn match celTitle ".path"
